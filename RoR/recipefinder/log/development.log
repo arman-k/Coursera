@@ -1,0 +1,502 @@
+
+
+Started GET "/" for ::1 at 2015-09-30 01:22:48 +0600
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (58.0ms)
+Completed 500 Internal Server Error in 5906ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (TypeError: Object doesn't support this property or method):
+    3: <head>
+    4:   <title>Recipefinder</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__49337063_39873792'
+
+
+  Rendered D:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered D:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered D:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered D:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (36.0ms)
+  Rendered D:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered D:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered D:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered D:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered D:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (33.0ms)
+  Rendered D:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered D:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered D:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (75.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-30 01:25:29 +0600
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 5279ms (Views: 3949.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/recipes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-30 01:25:35 +0600
+
+
+Started GET "/assets/recipes.self-2fc019f1eb0f7713917e3ac130e34a9e0e2dc1cc1ad394a822a3cf6c27942c6a.css?body=1" for ::1 at 2015-09-30 01:25:35 +0600
+
+
+Started GET "/" for ::1 at 2015-09-30 01:35:15 +0600
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 1284ms (Views: 85.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-30 01:35:16 +0600
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-30 01:35:16 +0600
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-30 01:35:16 +0600
+
+
+Started GET "/assets/recipes.self-2fc019f1eb0f7713917e3ac130e34a9e0e2dc1cc1ad394a822a3cf6c27942c6a.css?body=1" for ::1 at 2015-09-30 01:35:16 +0600
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-09-30 01:35:16 +0600
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-09-30 01:35:16 +0600
+
+
+Started GET "/assets/recipes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-30 01:35:17 +0600
+
+
+Started GET "/?search=cake" for ::1 at 2015-09-30 01:48:40 +0600
+Processing by RecipesController#index as HTML
+  Parameters: {"search"=>"cake"}
+  Rendered recipes/index.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 1733ms (Views: 117.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?search=popcorn" for ::1 at 2015-09-30 01:48:52 +0600
+Processing by RecipesController#index as HTML
+  Parameters: {"search"=>"popcorn"}
+  Rendered recipes/index.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 1655ms (Views: 147.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?search=fuckiehtkjafdghadfjg" for ::1 at 2015-09-30 01:48:59 +0600
+Processing by RecipesController#index as HTML
+  Parameters: {"search"=>"fuckiehtkjafdghadfjg"}
+  Rendered recipes/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 932ms (Views: 104.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?search=coke" for ::1 at 2015-09-30 01:52:32 +0600
+Processing by RecipesController#index as HTML
+  Parameters: {"search"=>"coke"}
+  Rendered recipes/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 1822ms (Views: 86.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-30 02:01:09 +0600
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (120.0ms)
+Completed 200 OK in 1470ms (Views: 202.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-30 02:01:25 +0600
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 1355ms (Views: 104.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?search=coke" for ::1 at 2015-09-30 02:02:08 +0600
+Processing by RecipesController#index as HTML
+  Parameters: {"search"=>"coke"}
+  Rendered recipes/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 2007ms (Views: 238.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?search=adkjghfdkjghfkjg" for ::1 at 2015-09-30 02:02:35 +0600
+Processing by RecipesController#index as HTML
+  Parameters: {"search"=>"adkjghfdkjghfkjg"}
+  Rendered recipes/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 912ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?search=adkjghfdkjghfkjg" for ::1 at 2015-09-30 02:03:36 +0600
+Processing by RecipesController#index as HTML
+  Parameters: {"search"=>"adkjghfdkjghfkjg"}
+  Rendered recipes/index.html.erb within layouts/application (11.0ms)
+Completed 500 Internal Server Error in 777ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `false?' for []:Array):
+    1: <h1>Searching for - <%= @search_term %></h1>
+    2: 
+    3: <% if @recipes.nil? || @recipes.false? %>
+    4: 
+    5: <p> No recipes found with relevant information... Sorry </p>
+    6: 
+  app/views/recipes/index.html.erb:3:in `_app_views_recipes_index_html_erb___342062115_59822052'
+
+
+  Rendered D:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered D:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered D:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered D:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (38.0ms)
+  Rendered D:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered D:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered D:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered D:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered D:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (34.0ms)
+  Rendered D:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered D:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered D:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (76.0ms)
+
+
+Started PUT "/console/repl_sessions/16f7ff4157f6da24c92176e40c60ab51" for ::1 at 2015-09-30 02:03:55 +0600
+
+
+Started GET "/?search=adkjghfdkjghfkjg" for ::1 at 2015-09-30 02:04:50 +0600
+Processing by RecipesController#index as HTML
+  Parameters: {"search"=>"adkjghfdkjghfkjg"}
+  Rendered recipes/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 1014ms (Views: 114.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-30 02:05:03 +0600
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 1329ms (Views: 103.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-30 02:07:51 +0600
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 1435ms (Views: 192.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/recipes.self-b26eea1d49392b95b246054fa64424e45ed24d7a48f1a8036750d0ef41e1dd48.css?body=1" for ::1 at 2015-09-30 02:07:52 +0600
+
+
+Started GET "/" for ::1 at 2015-09-30 02:09:04 +0600
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (34.0ms)
+Completed 200 OK in 4368ms (Views: 182.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/recipes.self-976eb06c13fa84abefd9f12ae23e0ca16c7d823da7c9d8b61097f5c9e80aaa20.css?body=1" for ::1 at 2015-09-30 02:09:09 +0600
+
+
+Started GET "/" for ::1 at 2015-09-30 02:09:23 +0600
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 1400ms (Views: 154.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/recipes.self-197cdcffc7081c256ab4af98123b1bfcceb6bc675ca10bdf79a0b35a209424ac.css?body=1" for ::1 at 2015-09-30 02:09:24 +0600
+
+
+Started GET "/" for ::1 at 2015-09-30 02:11:42 +0600
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 1330ms (Views: 169.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/recipes.self-8d62c699881fb1b6f3812e819017ed283f7e688facff5c3257e72ba34da1537e.css?body=1" for ::1 at 2015-09-30 02:11:43 +0600
+
+
+Started GET "/" for ::1 at 2015-09-30 02:13:12 +0600
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (46.0ms)
+Completed 200 OK in 1392ms (Views: 190.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/recipes.self-88d2b5f73a78c9195aa00a414aeb7bd73398c82d7bca29e67ea6f096359cd3f7.css?body=1" for ::1 at 2015-09-30 02:13:13 +0600
+
+
+Started GET "/?search=meat" for ::1 at 2015-09-30 02:13:44 +0600
+Processing by RecipesController#index as HTML
+  Parameters: {"search"=>"meat"}
+  Rendered recipes/index.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 1501ms (Views: 119.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?search=meat" for ::1 at 2015-09-30 02:14:36 +0600
+Processing by RecipesController#index as HTML
+  Parameters: {"search"=>"meat"}
+  Rendered recipes/index.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 1526ms (Views: 189.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-30 02:14:38 +0600
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-30 02:14:38 +0600
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-09-30 02:14:38 +0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-30 02:14:38 +0600
+
+
+Started GET "/assets/recipes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-30 02:14:38 +0600
+
+
+Started GET "/assets/recipes.self-af6419d3daba3ced30d98d13e2b6b0562f43c0b62c0878beccdafc9c0f18d8c9.css?body=1" for ::1 at 2015-09-30 02:14:38 +0600
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-09-30 02:14:38 +0600
+
+
+Started GET "/?search=meat" for ::1 at 2015-09-30 02:14:58 +0600
+Processing by RecipesController#index as HTML
+  Parameters: {"search"=>"meat"}
+  Rendered recipes/index.html.erb within layouts/application (27.0ms)
+Completed 200 OK in 1589ms (Views: 110.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?search=carrot" for ::1 at 2015-09-30 02:15:15 +0600
+Processing by RecipesController#index as HTML
+  Parameters: {"search"=>"carrot"}
+  Rendered recipes/index.html.erb within layouts/application (48.0ms)
+Completed 200 OK in 1101ms (Views: 127.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?search=mocha" for ::1 at 2015-09-30 02:22:37 +0600
+Processing by RecipesController#index as HTML
+  Parameters: {"search"=>"mocha"}
+  Rendered recipes/index.html.erb within layouts/application (41.0ms)
+Completed 200 OK in 1897ms (Views: 145.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/recipes.self-88d2b5f73a78c9195aa00a414aeb7bd73398c82d7bca29e67ea6f096359cd3f7.css?body=1" for ::1 at 2015-09-30 02:22:39 +0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-30 02:22:39 +0600
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-30 02:22:39 +0600
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-30 02:22:39 +0600
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-09-30 02:22:39 +0600
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-09-30 02:22:39 +0600
+
+
+Started GET "/assets/recipes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-30 02:22:39 +0600
+
+
+Started GET "/" for ::1 at 2015-09-30 02:22:51 +0600
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (48.0ms)
+Completed 200 OK in 1682ms (Views: 130.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-30 02:23:03 +0600
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (49.0ms)
+Completed 200 OK in 1709ms (Views: 126.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-30 02:23:05 +0600
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (38.0ms)
+Completed 200 OK in 1311ms (Views: 128.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-30 02:23:07 +0600
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (38.0ms)
+Completed 200 OK in 1293ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-30 02:23:09 +0600
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 1322ms (Views: 104.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?search=carrot" for ::1 at 2015-09-30 02:26:10 +0600
+Processing by RecipesController#index as HTML
+  Parameters: {"search"=>"carrot"}
+  Rendered recipes/index.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 1656ms (Views: 138.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?search=mocha" for ::1 at 2015-09-30 02:26:26 +0600
+Processing by RecipesController#index as HTML
+  Parameters: {"search"=>"mocha"}
+  Rendered recipes/index.html.erb within layouts/application (43.0ms)
+Completed 200 OK in 1923ms (Views: 122.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-09-30 02:26:28 +0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-30 02:26:28 +0600
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-30 02:26:28 +0600
+
+
+Started GET "/assets/recipes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-30 02:26:28 +0600
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-30 02:26:28 +0600
+
+
+Started GET "/assets/recipes.self-88d2b5f73a78c9195aa00a414aeb7bd73398c82d7bca29e67ea6f096359cd3f7.css?body=1" for ::1 at 2015-09-30 02:26:28 +0600
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-09-30 02:26:28 +0600
+
+
+Started GET "/" for ::1 at 2015-09-30 02:26:38 +0600
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 1350ms (Views: 105.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-30 02:26:52 +0600
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (29.0ms)
+Completed 200 OK in 1319ms (Views: 106.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-30 02:26:53 +0600
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (36.0ms)
+Completed 200 OK in 1360ms (Views: 113.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-30 02:26:55 +0600
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (36.0ms)
+Completed 200 OK in 1343ms (Views: 130.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-30 02:26:57 +0600
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 1310ms (Views: 107.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?search=mocha" for ::1 at 2015-09-30 02:28:42 +0600
+Processing by RecipesController#index as HTML
+  Parameters: {"search"=>"mocha"}
+  Rendered recipes/index.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 1584ms (Views: 111.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/recipes.self-88d2b5f73a78c9195aa00a414aeb7bd73398c82d7bca29e67ea6f096359cd3f7.css?body=1" for ::1 at 2015-09-30 02:28:45 +0600
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-09-30 02:28:45 +0600
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-30 02:28:45 +0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-30 02:28:45 +0600
+
+
+Started GET "/assets/recipes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-30 02:28:45 +0600
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-09-30 02:28:45 +0600
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-30 02:28:45 +0600
+
+
+Started GET "/" for ::1 at 2015-09-30 02:28:58 +0600
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 1472ms (Views: 166.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-30 02:29:11 +0600
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (37.0ms)
+Completed 200 OK in 1434ms (Views: 128.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-30 02:29:12 +0600
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (41.0ms)
+Completed 200 OK in 1357ms (Views: 120.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-30 02:29:14 +0600
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (40.0ms)
+Completed 200 OK in 1297ms (Views: 122.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-30 02:29:16 +0600
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (40.0ms)
+Completed 200 OK in 1371ms (Views: 118.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?search=mocha" for ::1 at 2015-09-30 02:34:22 +0600
+Processing by RecipesController#index as HTML
+  Parameters: {"search"=>"mocha"}
+  Rendered recipes/index.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 1613ms (Views: 117.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/recipes.self-88d2b5f73a78c9195aa00a414aeb7bd73398c82d7bca29e67ea6f096359cd3f7.css?body=1" for ::1 at 2015-09-30 02:34:24 +0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-30 02:34:24 +0600
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-30 02:34:24 +0600
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-30 02:34:24 +0600
+
+
+Started GET "/assets/turbolinks.self-6fb86ff58d930b560704818c7d9e5f60d83d65b91c6778c7f7e4210d5ba82127.js?body=1" for ::1 at 2015-09-30 02:34:24 +0600
+
+
+Started GET "/assets/recipes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-30 02:34:24 +0600
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-09-30 02:34:24 +0600
+
+
+Started GET "/" for ::1 at 2015-09-30 02:34:34 +0600
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (30.0ms)
+Completed 200 OK in 1579ms (Views: 370.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-30 02:34:46 +0600
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (37.0ms)
+Completed 200 OK in 1457ms (Views: 112.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-30 02:34:48 +0600
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 1273ms (Views: 114.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-30 02:34:50 +0600
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 1296ms (Views: 101.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-30 02:34:51 +0600
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 1518ms (Views: 119.0ms | ActiveRecord: 0.0ms)
