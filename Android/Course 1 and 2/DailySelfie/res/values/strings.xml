@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Daily Selfie</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="open_camera">Open Camera</string>
+    <string name="title_activity_list_view">ListViewActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_view_adapter">ViewAdapter</string>
+    <string name="title_activity_photo_record">PhotoRecord</string>
+    <string name="title_activity_full_view">FullViewActivity</string>
+    <string name="title_activity_notification_receiver">NotificationReceiver</string>
+    <string name="fullview_desc">The full view of this photo</string>
+    <string name="imgview_desc">The small version of this photo</string>
+    <string name="remove_all">Remove All Selfies!</string>
+
+</resources>

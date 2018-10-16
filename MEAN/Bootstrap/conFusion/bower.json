@@ -1,0 +1,28 @@
+{
+  "name": "conFusion",
+  "authors": [
+    "Arman Khandaker"
+  ],
+  "description": "Website for an awesome restaurant",
+  "version": "1.0.0",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "conFusion",
+    "Fusion",
+    "Restaurant"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "font-awesome": "~4.4.0"
+  }
+}

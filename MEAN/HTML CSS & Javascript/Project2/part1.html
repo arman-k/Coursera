@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Welcome to Color Guessing Game!</title>
+		<meta name="author" content="Arman Khandaker">
+	</head>
+	<body onload="do_game()">
+		<script>
+			var target;
+			var guess_input;
+			var finished = false;
+			var guesses = 0;
+			var colors; //Small subset of colors randomly chosen
+			//Entire list of CSS color names
+			var CSS_COLOR_NAMES = ["AliceBlue","AntiqueWhite","Aqua","Aquamarine","Azure","Beige","Bisque","Black","BlanchedAlmond","Blue","BlueViolet","Brown","BurlyWood","CadetBlue","Chartreuse","Chocolate","Coral","CornflowerBlue","Cornsilk","Crimson","Cyan","DarkBlue","DarkCyan","DarkGoldenRod","DarkGray","DarkGrey","DarkGreen","DarkKhaki","DarkMagenta","DarkOliveGreen","Darkorange","DarkOrchid","DarkRed","DarkSalmon","DarkSeaGreen","DarkSlateBlue","DarkSlateGray","DarkSlateGrey","DarkTurquoise","DarkViolet","DeepPink","DeepSkyBlue","DimGray","DimGrey","DodgerBlue","FireBrick","FloralWhite","ForestGreen","Fuchsia","Gainsboro","GhostWhite","Gold","GoldenRod","Gray","Grey","Green","GreenYellow","HoneyDew","HotPink","IndianRed","Indigo","Ivory","Khaki","Lavender","LavenderBlush","LawnGreen","LemonChiffon","LightBlue","LightCoral","LightCyan","LightGoldenRodYellow","LightGray","LightGrey","LightGreen","LightPink","LightSalmon","LightSeaGreen","LightSkyBlue","LightSlateGray","LightSlateGrey","LightSteelBlue","LightYellow","Lime","LimeGreen","Linen","Magenta","Maroon","MediumAquaMarine","MediumBlue","MediumOrchid","MediumPurple","MediumSeaGreen","MediumSlateBlue","MediumSpringGreen","MediumTurquoise","MediumVioletRed","MidnightBlue","MintCream","MistyRose","Moccasin","NavajoWhite","Navy","OldLace","Olive","OliveDrab","Orange","OrangeRed","Orchid","PaleGoldenRod","PaleGreen","PaleTurquoise","PaleVioletRed","PapayaWhip","PeachPuff","Peru","Pink","Plum","PowderBlue","Purple","Red","RosyBrown","RoyalBlue","SaddleBrown","Salmon","SandyBrown","SeaGreen","SeaShell","Sienna","Silver","SkyBlue","SlateBlue","SlateGray","SlateGrey","Snow","SpringGreen","SteelBlue","Tan","Teal","Thistle","Tomato","Turquoise","Violet","Wheat","White","WhiteSmoke","Yellow","YellowGreen"];
+
+			function do_game() 
+			{
+				colors = shuffle().sort();
+				var colors_string = colors.join(", ");
+				target = Math.floor(Math.random() * 12);
+				console.log("Debugging info: Color is " + colors[target]);
+
+				while(!finished)
+				{
+					guess_input = prompt("I am thinking of one of these colors: \n\n" +  colors_string + 
+										 "\n\nWhat color am I thinking of?");
+					guesses += 1;
+					finished = check_guess();
+				}
+			}
+
+			function check_guess()
+			{
+				return guess_input.toLowerCase() == colors[target].toLowerCase();
+			}
+
+			//This function shuffles the list of color names using Fisher-Yates algorithm and returns a randomized list of only 12 colors
+			function shuffle()
+			{
+				var rand;
+
+			    for (var i = CSS_COLOR_NAMES.length; i > 0; i--) 
+			    {
+			        rand = Math.floor(Math.random() * i);
+			        swap(i, rand);
+				}
+
+				return CSS_COLOR_NAMES.slice(0, 12);
+			}
+
+			//Helper function for shuffle
+			function swap(i, rand)
+			{
+				var temp = CSS_COLOR_NAMES[i];
+			    CSS_COLOR_NAMES[i] = CSS_COLOR_NAMES[rand];
+			    CSS_COLOR_NAMES[rand] = temp;
+			}
+		</script>
+	</body>
+</html>

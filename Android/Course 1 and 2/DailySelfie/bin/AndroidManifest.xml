@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.coursera.dailyselfie"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppBaseTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ListViewActivity"
+            android:label="@string/title_activity_list_view" >
+        </activity>
+        <activity
+            android:name=".ViewAdapter"
+            android:label="@string/title_activity_view_adapter" >
+        </activity>
+        <activity
+            android:name=".PhotoRecord"
+            android:label="@string/title_activity_photo_record" >
+        </activity>
+        <activity
+            android:name=".FullViewActivity"
+            android:label="@string/title_activity_full_view" >
+        </activity>
+        <activity
+            android:name=".NotificationReceiver"
+            android:label="@string/title_activity_notification_receiver" >
+        </activity>
+        
+        <receiver android:name=".NotificationReceiver"> </receiver>
+    </application>
+
+</manifest>
